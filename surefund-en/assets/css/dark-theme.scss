@@ -1,0 +1,402 @@
+/*-------------------------------
+    Dark Theme  CSS
+-------------------------------*/
+
+//Color Variable
+$clr_white: #fff;
+$clr_offwhite: rgba(255,255,255,0.85);
+$clr_black: #000;
+$clr_aztech: #041c22;
+$clr_cod: #111;
+$clr_red:#FF3838;
+$clr_grey: #ABA8B0;
+$clr_athens: #F3F4F6;
+$clr_cod:#111111;
+$clr_persian:#00A79D;
+$clr_corn:#5465F9;
+
+.switch-theme-mode{
+    position: fixed;
+    top: 200px;
+    right: 15px;
+    z-index: 99;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    &.round {
+        border-radius: 50%;
+        &:before{
+            border-radius: 50%;
+        }
+    }
+    &:before {
+        position: absolute;
+        content: "";
+        height: 35px;
+        width: 35px;
+        left: 0px;
+        bottom: 4px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        box-shadow: 0 0px 15px #2020203d;
+        background: white url('../img/night.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $clr_aztech;
+        background-size: 17px;
+    }
+}
+input:checked + .slider {
+  background-color: transparent;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px  transparent;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  background: white url('../img/sunny.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+
+}
+/*---------------------------------
+    Color CSS For Elements 
+-----------------------------------*/
+.theme-light {
+    .navbar-brand{
+        .logo-dark{
+            display: none!important;
+        }
+        .logo-light{
+            display: block!important;
+        }
+    }
+}
+.theme-dark {
+    .footer-logo,
+    .navbar-brand{
+        .logo-light{
+            display: none!important;
+        }
+        .logo-dark{
+            display: block!important;
+        }
+    }
+    .td-cod,
+    .header-wrap .header-top,
+    .bg-whisper,
+    .testimonial-card,
+    .hero-wrap.style2,
+    .hero-wrap.style3,
+    .btn.style3 {
+        background-color: $clr_cod!important;
+    }
+    body,
+    .bg-white,
+    .hero-wrap.style1,
+    .footer-wrap,
+    .feature-card.style2,
+    .feature-card.style4,
+    .feature-card.style1 {
+        background-color: $clr_black!important;
+    }
+    .td-aztech,
+    .wp-block-quote,
+    .breadcrumb-wrap,
+    .header-wrap .user-login ul,
+    .header-wrap .header-bottom,
+    .currency-card,
+    .feature-card.style3,
+    .feature-card.style5,
+    .converter-alert-text,
+    .sidebar .sidebar-widget,
+    .post-meta-option,
+    .post-author,
+    .comment-item,
+    #cmt-form,
+    .contact-item,
+    #contactForm,
+    .hero-wrap.style1 .hero-currency-convert .currency-converter-wrap{
+        background-color: $clr_aztech!important;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    h3 a,
+    a,
+    .header-wrap .header-bottom .sidebar-btn i,
+    .header-wrap .header-bottom .searchbtn i,
+    .accordion-item .accordion-header .accordion-button,
+    .user-login span i,
+    .header-wrap .navbar ul li a:hover {
+        color: $clr_white!important;
+    }
+    p,span,
+    .content-feature-list li,
+    article ol li, .terms-wrap ol li,
+    .breadcrumb-title .breadcrumb-menu li::after,
+    .login-form-wrap .login-body .form-group label,
+    .checkbox label,
+    .post-metainfo li{
+        color: $clr_offwhite!important;
+    }
+    
+    h3:hover a,
+    a:hover,
+    .link.style1,
+    article p strong, .terms-wrap p strong{
+        color: $clr_persian!important;
+    }
+    .breadcrumb-title h2,
+    .convert-box .convert-tabcontent .form-group input::Placeholder,
+    .hero-wrap.style1 .hero-currency-convert .currency-converter-wrap .form-group label,
+    .convert-box .convert-tabcontent .form-group label,
+    .breadcrumb-title .breadcrumb-menu li a{
+        color: $clr_white!important;
+    }
+    .blog-card{
+        border:1px solid rgba(255, 255, 255, 0.2);
+        .blog-info{
+            .blog-metainfo{
+                li{
+                    color: $clr_offwhite;
+                }
+            }
+        }
+        &.style4{
+            border: none;
+        }
+    }
+    .checkbox {
+        label {
+            &:before {
+                border: 1px solid rgba(255, 255, 255, 0.29);
+            }
+        }
+    }
+    .footer-wrap{
+       .container{
+            border-top: 1px solid rgba(255, 255, 255, 0.19);
+       }
+    }
+    .header-wrap .header-top .header-top-right .social-profile::before,
+    .wp-block-quote h5::before{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .hero-wrap.style2 .hero-img-wrap .hero-img-one::before,
+     .hero-wrap.style2 .hero-img-wrap .hero-img-two::before {
+        border-top-color: $clr_cod;
+        border-left-color: $clr_cod;
+    }
+    .about-wrap.style2 .about-img-wrap .about-img-one::before,
+    .about-wrap.style2 .about-img-wrap .about-img-two::before,
+    .wh-wrap.style2 .wh-img-wrap .wh-img::before {
+        border-top-color: $clr_black;
+        border-left-color: $clr_black;
+    }
+    .exchange-table-wrap{
+        .exchange-table{
+            table{
+                thead{
+                    tr{
+                        th{
+                            color: $clr_white;
+                            border-color: rgba(255, 255, 255, 0.19);
+                            background-color: $clr_aztech;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            color: $clr_white;
+                            border-color: rgba(255, 255, 255, 0.19);
+                            .country-flag{
+                                color: $clr_white;
+                            }
+                            button{
+                                padding: 6px 17px;
+                                i{
+                                    margin-right: 5px;
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .add-currency{
+            color: $clr_white;
+        }
+    }
+    .team-info-wrap,
+    .convert-box .convert-tabcontent .convert-icon,
+    .convert-box{
+        border: 1px solid rgba(255, 255, 255, 0.19);
+    }
+    .convert-box .convert-tablist .nav-item a {
+        background-color: rgba(255,255,255,0.1);
+    }
+    .convert-box .convert-tablist .nav-item a.active {
+        background-color: $clr_persian;
+        color: $clr_white;
+    }
+    .partner-item img {
+        filter: brightness(1) invert(1);
+    }
+     article,
+     .accordion-item .accordion-header .accordion-button,
+     .accordion-item .accordion-body,
+     .post-meta-option,
+     .post-author,
+     .pricing-card,
+     .donation-form,
+     .contact-box.style2,
+     .header-wrap .user-login ul li a,
+     .comment-item-wrap .comment-item{
+         border-color: rgba(255,255,255,0.19);
+    }
+    .hero-wrap.style1 .hero-currency-convert .currency-converter-wrap .form-group input,
+    .hero-wrap.style1 .hero-currency-convert .currency-converter-wrap .form-group select{
+        background-color: $clr_aztech;
+        border: 1px solid rgba(255,255,255,0.2);
+        color: $clr_white;
+    }
+    #contactForm .form-group textarea,
+    #contactForm .form-group input,
+    .search-box .form-group input,
+    #cmt-form .comment-form .form-group input,
+    #cmt-form .comment-form .form-group textarea,
+    .login-form-wrap .login-body .form-group input,
+    .convert-box .convert-tabcontent .form-group input,
+    .convert-box .convert-tabcontent .form-group select{
+        background-color: $clr_black;
+        border: 1px solid rgba(255,255,255,0.2);
+        color: $clr_white;
+    }
+    .category-box ul li a{
+        background-color: $clr_aztech;
+        &:hover{
+            color: $clr_white!important;
+            background-color: $clr_persian;
+        }
+    }
+    .tag-list li a{
+        li{
+            a{
+                background: transparent!important;
+                border:1px solid rgba(255, 255, 255, 0.2);
+                color: $clr_persian;
+                &:hover{
+                    background: $clr_persian!important;
+                    border-color: transparent;
+                    color: $clr_white!important;
+                }
+            }
+        }
+        &.style2{
+            li{
+                a{
+                    border: none;
+                }
+            }
+        }
+       
+    }
+    select{
+        background-image: url(../img/down-arrow-white.png);
+    }
+    .page-nav {
+        li {
+            a {
+                color: $clr_white;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                i {
+                    color: $clr_white;
+                }
+                &.active,
+                &:hover {
+                    background-color: $clr_persian;
+                    color: $clr_white;
+                    i {
+                        color: $clr_white;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width:991px) {
+    .theme-dark{
+        .mobile-top-bar span,
+        .header-wrap.style2 .mobile-top-bar span,
+        .header-wrap.style3 .mobile-top-bar span{
+            background-color: $clr_white;
+        }
+        .main-menu li a:hover{
+            color: $clr_black;
+        }
+        .main-menu-wrap,
+        .header-wrap .navbar .navbar-nav .nav-item .dropdown-menu{
+            background-color: $clr_cod;
+        }
+        .header-wrap .navbar .navbar-nav .nav-item a {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .menu-close i,
+        .header-wrap .navbar .navbar-nav .nav-item .menu-expand i {
+            color:$clr_white;
+        }
+        .header-wrap .navbar .navbar-nav .nav-item a.active{
+            color: $clr_persian!important;
+        }
+        .main-menu li a.active,
+        .main-menu li a{
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+@media only screen and (min-width:992px) {
+    .theme-dark{
+        .main-menu-wrap #menu ul li.has-children .sub-menu{
+            background-color: $clr_aztech;
+        }
+        .header-wrap .navbar .navbar-nav .nav-item .dropdown-menu{
+            background-color: $clr_cod;
+        }
+        .header-wrap .navbar .navbar-nav .nav-item .nav-link.active{
+            color: $clr_persian!important;
+        }
+    }
+}
