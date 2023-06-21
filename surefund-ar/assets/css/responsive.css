@@ -158,7 +158,7 @@
     line-height: 1.4;
   }
   .content-wrapper {
-    margin-top: 215px;
+    margin-top: 0px;
   }
   .breadcrumb-wrap {
     padding: 50px 0;
@@ -815,7 +815,7 @@
     font-size: 35px;
   }
   .content-wrapper {
-    margin-top: 164px;
+    margin-top: 55px;
   }
   .feature-card h3,
   .team-card .team-info h3,
