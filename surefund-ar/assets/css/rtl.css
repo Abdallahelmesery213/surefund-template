@@ -174,8 +174,8 @@ select {
 }
 
 .select-lang .navbar-language .dropdown-menu.show {
-  -webkit-transform: translateY(10px) !important;
-  transform: translateY(10px) !important;
+  -webkit-transform: translateY(31px) !important;
+  transform: translateY(31px) !important;
 }
 
 .select-lang i {

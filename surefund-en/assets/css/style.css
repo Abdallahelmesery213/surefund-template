@@ -1786,6 +1786,11 @@ select {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   font-size: 15px;
+  color: #fff;
+}
+.select-lang .navbar-language .dropdown-menu a:hover{
+  color: #000;
+  background-color: #fff;
 }
 
 .select-lang .navbar-language .dropdown-menu a img {
@@ -1794,9 +1799,10 @@ select {
 }
 
 .select-lang .navbar-language .dropdown-menu.show {
-  -webkit-transform: translateY(40px) !important;
-  transform: translateY(40px) !important;
-  opacity: 1;
+  -webkit-transform: translateY(31px) !important;
+  transform: translateY(31px) !important;
+  opacity: .5;
+  background-color: #000;
   pointer-events: all;
 }
 
@@ -4496,6 +4502,9 @@ select {
 /*-------------------------------
    Counter  Section  CSS
 -------------------------------*/
+.counter-card-wrap{
+  justify-content: center;
+}
 .counter-card-wrap .counter-card {
   width: 20%;
   position: relative;
@@ -6067,6 +6076,43 @@ article {
     height: 140px;
   }
 } 
+/*---------------------------------
+  service details CSS 
+-----------------------------------*/
+.service-details .detail{
+  background-color: #eee;
+  padding: 100px 0;
+}
+.service-details .detail h3{
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #08526d;
+}
+.service-details .detail p{
+  line-height: 1.8;
+  width: 80%;
+  font-size: 20px;
+  margin: 0 auto 15px;
+  color: #6a6a6a;
+}
+.service-details .detail a.btn{
+  background-color: #f6891e;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.service-details .detail h6{
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: normal;
+  color: #8b8a8a;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
 
 /*---------------------------------
         Footer CSS 
