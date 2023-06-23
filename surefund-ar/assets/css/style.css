@@ -3812,7 +3812,9 @@ select {
 .main-types h2.section-header{
   font-size: 30px;
   margin: 5px 0 25px 0;
-  color: #4c4a4a;
+  color: #8d8989;
+  margin-bottom: 65px;
+  text-align: center;
   font-weight: bold;
 }
 @media only screen and (max-width: 600px) {
