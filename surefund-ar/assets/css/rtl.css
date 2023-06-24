@@ -975,6 +975,11 @@ select {
 }
 
 @media only screen and (max-width: 991px) {
+  .select-lang .navbar-language .dropdown-menu.show{
+    -webkit-transform: translateY(0) !important;
+    transform: translateY(0) !important;
+    position: relative;
+  }
   .header-wrap .header-bottom .navbar .navbar-nav .nav-item .menu-expand {
     right: auto;
     left: 0;

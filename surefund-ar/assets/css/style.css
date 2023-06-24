@@ -1914,10 +1914,27 @@ select {
 .second-header .dropdown-menu.show{
   width: 200px;
 }
+.switch-theme-mode{
+  display: none;
+}
+.second-header .btn .badge{
+  top: 15px !important;
+  right: 60px !important;
+}
 
 @media only screen and (max-width: 991px) {
-  .header-wrap{
+  /* .header-wrap{
     display: none;
+  } */
+  .select-lang{
+    position: absolute;
+    left: 10%;
+    top: 20px;
+  }
+  .select-lang .navbar-language .dropdown-menu.show{
+    -webkit-transform: translateY(0) !important;
+    transform: translateY(0) !important;
+    position: relative;
   }
   .second-header{
     display: block !important;
@@ -1978,6 +1995,7 @@ select {
     top: 7px;
   }
   .header-wrap .header-bottom .navbar .navbar-nav .nav-item a {
+    width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     padding-top: 15px;
     padding-bottom: 15px;
@@ -6079,12 +6097,17 @@ article {
 .carousel-item img{
   height: 540px;
 }
-
-@media only screen and (max-width: 575px){
-  .carousel-item img{
-    height: 140px;
+@media only screen and (max-width: 575px) {
+  .carousel-item img {
+  height: 330px;
+  margin-top: 60px; 
   }
-} 
+}
+@media only screen and (max-width: 425px) {
+  .carousel-item img {
+    height: 185px;
+  }
+}
 /*---------------------------------
   service details CSS 
 -----------------------------------*/
@@ -6289,7 +6312,11 @@ article {
 .copyright-text a:hover {
   text-decoration: underline;
 }
-
+@media only screen and (max-width: 327px) {
+  .second-header .icons-nav a {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .footer-wrap .footer-widget .footer-widget-title {
     font-size: 20px;
