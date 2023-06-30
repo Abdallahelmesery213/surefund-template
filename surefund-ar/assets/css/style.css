@@ -1702,9 +1702,9 @@ select {
 }
 
 .user-login ul.open {
-  top: 32px;
+  top: 55px;
   visibility: visible;
-  opacity: 1;
+  opacity: .8;
 }
 
 .user-login ul li a {
@@ -1885,6 +1885,24 @@ select {
   align-items: center;
   justify-content: end;
 }
+/* .second-header .icons-nav .position-relative{
+  top: 50%;
+  transform: translateY(10px);
+  font-size: 22px;
+} */
+.second-header .icons-nav .position-relative .badge{
+  top: 2px !important;
+  right: 36px !important;
+  font-size: 13px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-header .icons-nav i{
+  font-size: 20px;
+}
 .second-header .icons-nav{
   display: flex;
   flex-direction: column;
@@ -1893,6 +1911,13 @@ select {
 .second-header .icons-nav a{
   color: #fff;
   text-decoration: none;
+  line-height: 15px;
+  font-size: 15px;
+}
+.second-header .icons-nav p{
+  font-size: 15px;
+  line-height: 15px;
+  color: #fff;
 }
 .second-header .dropup .dropdown-toggle::after{
   display: none;
@@ -1917,23 +1942,27 @@ select {
 .switch-theme-mode{
   display: none;
 }
-.second-header .btn .badge{
+/* .second-header .btn .badge{
   top: 15px !important;
-  right: 60px !important;
-}
+  left: 88px !important;
+} */
+/* .main-menu-wrap .select-lang{
+  display: none;
+} */
 
 @media only screen and (max-width: 991px) {
   /* .header-wrap{
     display: none;
   } */
-  .select-lang{
+  .navbar-collapse .select-lang{
     position: absolute;
-    left: 10%;
+    right: 10%;
     top: 20px;
+    display: none;
   }
   .select-lang .navbar-language .dropdown-menu.show{
-    -webkit-transform: translateY(0) !important;
-    transform: translateY(0) !important;
+    -webkit-transform: translateY(45px) !important;
+    transform: translateY(45px) !important;
     position: relative;
   }
   .second-header{
@@ -3881,6 +3910,11 @@ select {
     position: absolute;
   }
 }
+@media only screen and (max-width: 353px) {
+  .main-types nav .nav-tabs button {
+    width: 140px;
+  }
+}
 @media screen and (max-width: 382px){
   /* .main-types .tab-content .tab-pane .feature-card {
     height: 320px;
@@ -3901,6 +3935,12 @@ select {
   }
   .main-types .tab-content .tab-pane .feature-card p{
     font-size: 11px;
+  }
+  .main-types nav .nav-tabs button {
+    width: 125px;
+  }
+  .second-header .icons-nav .position-relative .badge{
+    left: 58px !important;
   }
 }
 /* @media only screen and (max-width: 992px){

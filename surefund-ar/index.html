@@ -336,11 +336,30 @@
                         </nav>
                         <div class="mobile-bar-wrap">
                             <div class="user-login d-lg-none">
-                                <span><i class="ri-user-add-line"></i></span>
+                                <!-- <span><i class="ri-user-add-line"></i></span>
                                 <ul class="list-style">
                                     <li><a href="login.html">تسجيل الدخول</a></li>
                                     <li><a href="register.html">تسجيل جديد</a></li>
-                                </ul>
+                                </ul> -->
+                                <div class="select-lang">
+                                    <i class="ri-earth-fill"></i>
+                                    <div class="navbar-option-item navbar-language dropdown language-option">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <span class="lang-name"></span>
+                                        </button>
+                                        <div class="dropdown-menu language-dropdown-menu">
+                                            <a class="dropdown-item" href="#">
+                                                <img src="assets/img/uk.png" alt="flag">
+                                                English
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="assets/img/uae.png" alt="flag">
+                                                العربيّة
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="mobile-menu d-lg-none">
                                 <a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
@@ -358,12 +377,19 @@
                         <div class="row">
                             <div class="col-3">
                                 <div class="icons-nav">
-                                    <a href="#" type="button" class="btn position-relative">
+                                    <i class="ri-file-list-3-line"></i>
+                                    <a href="#" class="position-relative">
+                                        طلب
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            5
+                                        </span>
+                                    </a>
+                                    <!-- <a href="#" type="button" class="btn position-relative">
                                         طلب
                                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                           5
                                         </span>
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                             <div class="col-3">
@@ -390,13 +416,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-3">
                                 <div class="icons-nav">
                                     <i class="ri-user-3-line"></i>
-                                    <a href="login.html">حسابي</a>
+                                    <a href="login.html">دخول</a>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-3">
                                 <div class="icons-nav">
                                     <i class="ri-home-4-line"></i>
                                     <a href="index.html">الرئيسية </a>
