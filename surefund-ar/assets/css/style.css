@@ -1005,6 +1005,7 @@ select {
 
 .bg-whisper {
   background-color: #FAFAFC;
+  padding: 50px 0;
 }
 
 .body_overlay {
@@ -4020,6 +4021,7 @@ select {
 
 .feature-card.style1 {
   background-color: #fff;
+  min-height: 270px;
   position: relative;
   margin-bottom: 25px;
   -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
@@ -4035,7 +4037,8 @@ select {
   margin-bottom: 20px;
   border-radius: 62% 38% 46% 54% / 60% 63% 37% 40%;
   background-color: #1158aa;
-  height: 62px;
+  width: 50px;
+  height: 50px;
 }
 
 .feature-card.style1 .feature-icon:after {
@@ -4071,7 +4074,8 @@ select {
 .feature-card.style1:hover .feature-icon {
   border-radius: 50%;
   background-color: #fff;
-  width: 62px;
+  width: 50px;
+  height: 50px;
 }
 
 .feature-card.style1:hover .feature-icon i {
