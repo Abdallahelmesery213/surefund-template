@@ -3995,13 +3995,16 @@ select {
 }
 
 .feature-card h3 {
-  font-size: 22px;
+  font-size: 18px !important;
+  font-weight: 700;
+  line-height: 1.4;
   margin: 0 0 10px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .feature-card p {
+  line-height: 1.6;
   margin: 0 0 12px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
