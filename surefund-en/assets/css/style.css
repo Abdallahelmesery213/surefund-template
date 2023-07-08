@@ -3870,7 +3870,7 @@ select {
     height: 145px !important;
   } */
   .main-types .tab-content .tab-pane .feature-card {
-    height: 185px;
+    min-height: 165px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -3884,8 +3884,11 @@ select {
     line-height: 1.4;
   }
   .feature-card.style1 .feature-icon{
-    width: 45px;
-    height: 45px;
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .feature-card .feature-icon i {
+    font-size: 20px !important;
   }
   .main-types h2.section-header{
     font-size: 25px;
@@ -3920,9 +3923,9 @@ select {
   }
 }
 @media screen and (max-width: 360px){
-  /* .main-types .tab-content .tab-pane .feature-card {
-    height: 325px;
-  } */
+  .main-types .tab-content .tab-pane .feature-card {
+    min-height: 150px;
+  }
   .main-types .tab-content .tab-pane .feature-card h3 a{
     font-size: 12px;
   }
